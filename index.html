@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YDC Music House — Cinematic Sound Atelier</title>
+  <meta name="description" content="YDC Music House — Bespoke cinematic soundtracks, adaptive game audio, and neoclassical reinterpretations by Sand Zera.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FIXED WAVEFORM BACKGROUND -->
+  <canvas id="globalWaveform" class="global-waveform"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-mark">YDC</span>
+        <span class="nav-logo-sub">MUSIC HOUSE</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#manifesto" class="nav-link">Manifesto</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#artist" class="nav-link">Artist</a>
+        <a href="#works" class="nav-link">Works</a>
+        <a href="#contact" class="nav-link nav-link--cta">Commission</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO / MANIFESTO -->
+  <section class="hero" id="manifesto">
+    <div class="container hero-content">
+      <img src="img/ydc-logo.svg" alt="YDC Music House" class="hero-logo">
+      <p class="label-caps hero-eyebrow">Y'all Don't Care — Until the Sound Hits</p>
+      <h1 class="display-hero">We Make Music That<br>Sticks.</h1>YDC is about making music with feeling — from original compositions and reinterpretations to music built for games and creative projects.
+
+No fixed genre. No fixed formula. Just an idea, a project, and whatever it takes to make the sound work.</p>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">Audition Works</a>
+        <a href="#contact" class="btn btn-secondary">Book a Score</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="mono-metric">Original Music</span>
+          <span class="body-sm">Music built from scratch</span>
+        </div>
+        <div class="hero-stat">
+          <span class="mono-metric">Reinterpretations</span>
+          <span class="body-sm">Existing music, rebuilt differently</span>
+        </div>
+        <div class="hero-stat">
+          <span class="mono-metric">Game Music</span>
+          <span class="body-sm">Music made for worlds, stories and moments</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GSM PILLARS / CAPABILITIES -->
+  <section class="pillars" id="capabilities">
+    <div class="container">
+      <p class="label-caps section-label">Core Architecture</p>
+      <h2 class="headline-lg">What We Make</h2>
+      <div class="pillars-grid">
+
+        <div class="pillar-card neu-card" data-reveal>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 14v20M16 10v28M24 18v12M32 8v32M40 14v20"/><circle cx="8" cy="24" r="2"/><circle cx="16" cy="24" r="2"/><circle cx="24" cy="24" r="2"/><circle cx="32" cy="24" r="2"/><circle cx="40" cy="24" r="2"/></svg>
+          </div>
+          <span class="label-caps pillar-tag">Original Work</span>
+          <h3 class="headline-md">Music from scratch</h3>
+          <p class="body-md">Music written and produced from the ground up, starting with an idea and shaping it through melody, harmony, arrangement, and sound.</p>
+        </div>
+
+        <div class="pillar-card neu-card" data-reveal>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="40" height="24" rx="2"/><path d="M18 36h12M24 32v4"/><path d="M14 18l6 4-6 4V18z" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <span class="label-caps pillar-tag">Reworks</span>
+          <h3 class="headline-md">Taking It Somewhere Else</h3>
+          <p class="body-md">Existing music rebuilt from a different perspective. New arrangements, new instruments, and new production while keeping the parts that made the original worth returning to.</p>
+        </div>
+
+        <div class="pillar-card neu-card" data-reveal>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="6"/><path d="M24 6v4M24 38v4M6 24h4M38 24h4"/></svg>
+          </div>
+          <span class="label-caps pillar-tag">Game Audio</span>
+          <h3 class="headline-md">Music For Games</h3>
+          <p class="body-md">Music made for the worlds people play in-from character themes to atmosphere to battles, menus, and whatever else a game might need.</p>
+        </div>
+
+        <div class="pillar-card neu-card" data-reveal>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 36V18l8-8 8 8v18"/><path d="M28 36V22l8-6 8 6v14"/><path d="M4 36h40"/><rect x="18" y="26" width="4" height="8" rx="1"/></svg>
+          </div>
+          <span class="label-caps pillar-tag">Production</span>
+          <h3 class="headline-md">Putting The Pieces Together</h3>
+          <p class="body-md">Turning Musical ideas into a complete track through chords, melodies, instrumentation, arrangement, and production.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIST SPOTLIGHT -->
+  <section class="artist" id="artist">
+    <div class="container artist-layout">
+      <div class="artist-image-col" data-reveal>
+        <div class="artist-image neu-card neu-card--primary">
+          <img src="img/sand zera.jpeg" alt="Sand Zera — Principal Music Composer & Orchestral Producer" class="artist-photo">
+        </div>
+      </div>
+      <div class="artist-info-col" data-reveal>
+        <p class="label-caps section-label">Artist Spotlight</p>
+        <h2 class="headline-lg">Sand Zera</h2>
+        <p class="body-lg artist-role">Composer · Producer</p>
+        <p class="body-md artist-bio">Musical direction, composition, modular synthesis, orchestration, and audio mastering. Championing authentic, high-emotion neoclassical and modular hybrid compositions that redefine cinematic tension and immersive audio narrative.I love making music from the ground up — from the first chord or melody to the arrangement, instrumentation, and final production. My work moves freely between original compositions, reinterpretations, and music made for games and other creative projects.
+
+I’m especially drawn to music that creates a feeling, builds an atmosphere, or makes a world feel more alive. I don't want to be tied to one genre — if the project calls for it, I'll make it.</p>
+        <div class="artist-specs">
+          <div class="artist-spec">
+            <span class="label-caps">Role</span>
+            <span class="mono-metric">Founder · Composer · Producer</span>
+          </div>
+          <div class="artist-spec">
+            <span class="label-caps">Focus</span>
+            <span class="mono-metric">Composition · Harmony · Melody · Arrangement · Production</span>
+          </div>
+          <div class="artist-spec">
+            <span class="label-caps">Approach</span>
+            <span class="mono-metric">Original Music · Reinterpretations · Game Music</span>
+          </div>
+          <div class="artist-spec">
+            <span class="label-caps">Tools</span>
+            <span class="mono-metric">FL Studio · Software Instruments · Samples</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS MATRIX -->
+  <section class="works" id="works">
+    <div class="container">
+      <p class="label-caps section-label">Audition Matrix</p>
+      <h2 class="headline-lg">Featured Works</h2>
+      <div class="works-list">
+
+        <div class="work-row neu-card" data-track="0">
+          <div class="work-play">
+            <button class="transport-btn" data-action="play" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+            </button>
+          </div>
+          <div class="work-info">
+            <h3 class="headline-sm">01001101.01000100</h3>
+            <div class="work-tags">
+              <span class="chip chip--primary">Original Score</span>
+              <span class="chip">Instrumental</span>
+              <span class="chip chip--accent">Cinematic</span>
+            </div>
+          </div>
+          <div class="work-waveform">
+            <canvas class="waveform-canvas" width="600" height="48"></canvas>
+          </div>
+          <div class="work-meta">
+            <span class="mono-metric work-time">--:--</span>
+          </div>
+        </div>
+
+        <div class="work-row neu-card" data-track="1">
+          <div class="work-play">
+            <button class="transport-btn" data-action="play" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+            </button>
+          </div>
+          <div class="work-info">
+            <h3 class="headline-sm">Undertale</h3>
+            <div class="work-tags">
+              <span class="chip chip--secondary">Reinterpretation</span>
+              <span class="chip">GAME OST</span>
+              <span class="chip chip--accent">Undertale</span>
+            </div>
+          </div>
+          <div class="work-waveform">
+            <canvas class="waveform-canvas" width="600" height="48"></canvas>
+          </div>
+          <div class="work-meta">
+            <span class="mono-metric work-time">--:--</span>
+          </div>
+        </div>
+
+        <div class="work-row neu-card" data-track="2">
+          <div class="work-play">
+            <button class="transport-btn" data-action="play" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+            </button>
+          </div>
+          <div class="work-info">
+            <h3 class="headline-sm">Set Fire to the Rain</h3>
+            <div class="work-tags">
+              <span class="chip chip--secondary">Reinterpretation</span>
+              <span class="chip">Amapiano</span>
+              <span class="chip chip--accent">Hybrid</span>
+            </div>
+          </div>
+          <div class="work-waveform">
+            <canvas class="waveform-canvas" width="600" height="48"></canvas>
+          </div>
+          <div class="work-meta">
+            <span class="mono-metric work-time">--:--</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Global Player Bar -->
+      <div class="player-bar" id="playerBar" style="display:none">
+        <div class="player-bar-inner">
+          <div class="player-track-info">
+            <span class="player-track-name headline-sm" id="playerTrackName"></span>
+            <span class="player-track-tag label-caps" id="playerTrackTag"></span>
+          </div>
+          <div class="player-controls">
+            <button class="transport-btn transport-btn--lg" id="playerPrev" aria-label="Previous">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zM9.5 12l8.5 6V6z"/></svg>
+            </button>
+            <button class="transport-btn transport-btn--lg transport-btn--play" id="playerPlayPause" aria-label="Play/Pause">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+            </button>
+            <button class="transport-btn transport-btn--lg" id="playerNext" aria-label="Next">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z"/></svg>
+            </button>
+          </div>
+          <div class="player-progress">
+            <span class="mono-metric" id="playerCurrentTime">0:00</span>
+            <div class="progress-track" id="progressTrack">
+              <div class="progress-fill" id="progressFill"></div>
+              <div class="progress-head" id="progressHead"></div>
+            </div>
+            <span class="mono-metric" id="playerDuration">0:00</span>
+          </div>
+          <div class="player-volume">
+            <div class="volume-control">
+              <button class="volume-btn" id="volumeBtn" aria-label="Mute/Unmute">
+                <svg id="volumeIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                <svg id="volumeMuteIcon" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+              </button>
+              <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="80" aria-label="Volume">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO / CAPABILITIES -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="label-caps section-label">What We Do</p>
+      <h2 class="headline-lg">Capabilities</h2>
+      <div class="services-grid">
+
+        <div class="service-card neu-card" data-reveal>
+          <span class="mono-metric service-number">01</span>
+          <h3 class="headline-md">Original Composition</h3>
+          <p class="body-md">Music written from the ground up — starting with an idea, chord progression, or melody and developing it into a complete piece.</p>
+          <div class="service-specs">
+            <span class="chip chip--primary">Composition</span>
+            <span class="chip chip--primary">Harmony</span>
+            <span class="chip chip--primary">Melody</span>
+          </div>
+        </div>
+
+        <div class="service-card neu-card" data-reveal>
+          <span class="mono-metric service-number">02</span>
+          <h3 class="headline-md">Arrangement &amp; Production</h3>
+          <p class="body-md">Turning musical ideas into a finished arrangement through instrumentation, sound selection, structure, and production.</p>
+          <div class="service-specs">
+            <span class="chip chip--secondary">Instrumentation</span>
+            <span class="chip chip--secondary">Arrangement</span>
+            <span class="chip chip--secondary">FL Studio</span>
+          </div>
+        </div>
+
+        <div class="service-card neu-card" data-reveal>
+          <span class="mono-metric service-number">03</span>
+          <h3 class="headline-md">Reinterpretation</h3>
+          <p class="body-md">Taking existing music and rebuilding it from a different perspective — changing the arrangement, instrumentation, genre, and overall feel.</p>
+          <div class="service-specs">
+            <span class="chip chip--accent">Covers</span>
+            <span class="chip chip--accent">Reworks</span>
+            <span class="chip chip--accent">New Perspectives</span>
+          </div>
+        </div>
+
+        <div class="service-card neu-card" data-reveal>
+          <span class="mono-metric service-number">04</span>
+          <h3 class="headline-md">Game Music</h3>
+          <p class="body-md">Music created around a game's world, characters, atmosphere, and moments — from a single theme to a broader soundtrack.</p>
+          <div class="service-specs">
+            <span class="chip chip--primary">Themes</span>
+            <span class="chip chip--primary">Atmosphere</span>
+            <span class="chip chip--primary">Soundtracks</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMISSION -->
+  <section class="contact" id="contact">
+    <div class="container contact-layout">
+      <div class="contact-info" data-reveal>
+        <p class="label-caps section-label">Commission</p>
+        <h2 class="headline-lg">Let's Make Something.</h2>
+        <p class="body-lg">Have a project that needs music? Whether it's a game, film, animation, or something completely different, I'd love to hear about it.</p>
+        <p class="body-md" style="color: var(--text-mid); margin-top: var(--space-md);">Tell me what you're working on, what you're looking for, and where you want to take it. We'll figure out the music from there.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="label-caps">Studio</span>
+            <span class="mono-metric">YDC Music House</span>
+          </div>
+          <div class="contact-detail">
+            <span class="label-caps">Composer &amp; Producer</span>
+            <span class="mono-metric">Sand Zera</span>
+          </div>
+          <div class="contact-detail">
+            <span class="label-caps">Get In Touch</span>
+            <span class="mono-metric">Let's talk about your project</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap" data-reveal>
+        <form class="contact-form neu-card" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b7cc410f-c3ca-43a8-bf45-d6888de39b1b">
+          <input type="hidden" name="subject" value="New Commission Inquiry — YDC Music House">
+          <input type="hidden" name="from_name" value="YDC Music House Website">
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <div class="form-group">
+            <label class="label-caps" for="formName">Name</label>
+            <input type="text" id="formName" name="name" class="form-input" placeholder="Your name or studio" required>
+          </div>
+          <div class="form-group">
+            <label class="label-caps" for="formEmail">Email</label>
+            <input type="email" id="formEmail" name="email" class="form-input" placeholder="contact@studio.com" required>
+          </div>
+          <div class="form-group">
+            <label class="label-caps" for="formProject">Project Type</label>
+            <select id="formProject" name="project_type" class="form-input" required>
+              <option value="">Select project type</option>
+              <option value="game">Game Soundtrack</option>
+              <option value="film">Film / Trailer Scoring</option>
+              <option value="release">Artistic Release</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="label-caps" for="formMessage">Brief</label>
+            <textarea id="formMessage" name="message" class="form-input form-textarea" rows="4" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Commission Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="img/ydc-logo.svg" alt="YDC" class="footer-brand-img">
+        <span class="body-sm">Music House</span>
+      </div>
+      <p class="body-sm footer-copy">Y'all Don't Care — Until the Sound Hits.</p>
+      <div class="footer-meta">
+        <span class="mono-metric">&copy; 2026 YDC Music House</span>
+        <span class="mono-metric">Sand Zera — Founder</span>
+      </div>
+    </div>
+  </footer>
+
+  <audio id="audioElement" preload="auto"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
